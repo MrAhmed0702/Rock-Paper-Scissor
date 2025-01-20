@@ -2,6 +2,10 @@ const choices = ["rock", "paper", "scissors"];
 const playerResult = document.getElementById("playerResult");
 const computerResult = document.getElementById("computerResult");
 const displayResult = document.getElementById("displayResult");
+const playerScoreDisplay = document.getElementById("playerScoreDisplay");
+const computerScoreDisplay = document.getElementById("computerScoreDisplay");
+let playerScore = 0;
+let computerScore = 0;
 
 function playerChoice(choice) {
 
@@ -34,9 +38,13 @@ function playerChoice(choice) {
     switch (result) {
         case "You win!":
             displayResult.classList.add("greenText");
+            playerScore++;
+            playerScoreDisplay.textContent = playerScore;
             break;
         case "You lose!":
             displayResult.classList.add("redText");
+            computerScore++;
+            computerScoreDisplay.textContent = computerScore;
             break;
         case "It's a tie!":
             displayResult.classList.add("yellowText");

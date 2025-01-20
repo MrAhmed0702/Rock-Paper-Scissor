@@ -46,5 +46,19 @@ h1{
 }
 
 #displayResult {
-    
+    font-size: 5em;
+    font-weight: 800;
+    text-align: center;
+}
+
+.greenText {
+    color: hsl(120, 75%, 38%);
+}
+
+.redText {
+    color: hsl(0, 90%, 56%);
+}
+
+.yellowText {
+    color: hsl(60, 100%, 50%)
 }
